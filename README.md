@@ -1,6 +1,7 @@
 # 8810558ygh.github.io
 
-个人主页与作品下载页，使用纯 HTML、CSS 和 JavaScript 编写，通过 GitHub Pages 发布。
+Baixuan Yang（8810558ygh）的个人主页与作品下载页，使用纯 HTML、CSS 和 JavaScript
+编写，通过 GitHub Pages 发布。
 
 访问地址：<https://8810558ygh.github.io/>
 
