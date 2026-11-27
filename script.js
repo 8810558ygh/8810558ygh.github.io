@@ -26,6 +26,15 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 const toast = document.getElementById('downloadToast');
 let toastTimer = 0;
 
+window.addEventListener('wheel', event => {
+  if ((!event.ctrlKey && !event.metaKey) || event.defaultPrevented) return;
+  event.preventDefault();
+  const deltaUnit = event.deltaMode === WheelEvent.DOM_DELTA_LINE
+    ? 16
+    : (event.deltaMode === WheelEvent.DOM_DELTA_PAGE ? window.innerHeight : 1);
+  window.scrollBy(0, event.deltaY * deltaUnit);
+}, { passive: false });
+
 document.querySelectorAll('.download-link').forEach(link => {
   link.addEventListener('click', () => {
     if (!toast) return;
