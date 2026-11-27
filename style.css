@@ -688,6 +688,8 @@ main {
 
 .project-main {
   padding: 42px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-topline {
@@ -755,31 +757,8 @@ main {
   line-height: 1.9;
 }
 
-.feature-list {
-  margin: 29px 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 13px 24px;
-  list-style: none;
-}
-
-.feature-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--muted-bright);
-  font-size: 12px;
-}
-
-.feature-list span {
-  color: var(--accent);
-  font-family: var(--font-display);
-  font-size: 9px;
-}
-
 .requirements {
-  margin-top: 34px;
+  margin-top: auto;
   padding-top: 24px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1308,7 +1287,6 @@ main {
     line-height: 1.55;
   }
 
-  .feature-list,
   .requirements {
     grid-template-columns: 1fr;
   }
